@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles-descuentos.css">
+    <title>Cupones de descuento | Curso práctico de javascript</title>
+</head>
+<body>
+    <header>
+        <h1>Cupones de descuentos</h1>
+        <p>Este es el segundo taller de javascript, reto cupones de descuento</p>
+    </header>
+    <main>
+        <section class="container">     
+        <form action="">
+                <h2>Calcula el precio final a pagar con cupón de descuento</h2>
+                <span class="containerOption firstSpan">
+                    <label for="InputPrice">Precio del producto</label>
+                    <span  class="inputContainer">
+                        <span class="simbol">$</span>
+                        <input type="number" id="inputPrice">
+                    </span>
+                </span>
+                <span class="containerOption">
+                    <label for="InputDiscount">Introduce el cupón de descuento</label>
+                    <span>
+                        <input type="text" id="couponDiscount">
+                        <input type="button" value="Validar" id="botonValidarCupon">
+                    </span>
+                </span>
+                <span class="alerts">
+                    <p class="discountAlert" id="discountAlert"></p>
+                    <p class="discountAlert" id="discountCouponAlert"></p>
+                </span>
+            </form>
+            <section class="results">
+                <div class="resultSaving">
+                    <p>Ahorro:</p>
+                    <p><span id="saving">$0</span></p>
+                </div>
+                <div class="resultDiscount">
+                    <p>Pago final:</p>
+                   <p><span id="result">$0</span></p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>© 2022 | Janet Torres.  Todos los derechos reservados. Segundo taller del curso Práctico de JavaScript. By Platzi <span class="footerHeart">♥</span></p>
+        </div>
+    </footer>
+<script src="./descuentos-cupones.js"></script>
+</body>
+</html>
